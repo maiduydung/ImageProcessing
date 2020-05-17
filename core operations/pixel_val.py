@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('resources/messi.jpg')
+img = cv2.imread('../resources/man.jpg')
 #w, h, and channel
 print("shape: ",img.shape)
 
