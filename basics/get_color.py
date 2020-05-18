@@ -17,6 +17,9 @@ def click_event(event, x, y, flags, param):
         red = img[y, x, 2]
 
         print("rgb: ", red, ", ", green, ", ", blue)
+        color = np.zeros((200,200,3), np.uint8)
+        color[:] = [blue, green, red]
+        cv2.imshow("color", color)
 
 
 
