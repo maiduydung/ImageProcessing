@@ -1,12 +1,12 @@
 import cv2 
 import numpy as np
 
-capture = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)
 
 # if(not capture.isOpened()):
 #     print("Error opening")
 
-while(capture.isOpened()):
+while(cap.isOpened()):
     ret, frame = cap.read()
     if ret == True:
         cv2.imshow("Webcam", frame)
@@ -14,5 +14,5 @@ while(capture.isOpened()):
             break
     else:
         break
-capture.release()
+cap.release()
 cv2.destroyAllWindows()
